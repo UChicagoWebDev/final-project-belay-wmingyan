@@ -1,0 +1,223 @@
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #F4EDE4;
+  margin: 0;
+  height: 100vh;
+}
+
+.unauth,
+.auth {
+  width: 95%;
+  margin: auto;
+}
+
+.home {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.title {
+  color: rgb(0, 0, 0);
+  margin-top: 10%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+input {
+  margin-left: 5px;
+}
+
+.container {
+  width: 900px;
+  height: 100%;
+  margin: auto;
+  padding: 0 30px 0 30px;
+  background-color: white;
+  box-shadow: 0 0 20px black;
+}
+
+button {
+  color: rgb(0, 0, 0);
+  /* text-shadow: -1px -1px 2px rgb(255, 255, 255); */
+  font-family: sans-serif;
+  background-color: #f4ede4;
+  padding: 6px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 10px;
+  will-change: transform;
+  transition: transform 100ms;
+}
+
+.emoji {
+  will-change: transform;
+  transition: transform 100ms;
+}
+
+button:hover, .emoji:hover {
+  transform: scale(1.1);
+}
+
+button.dark {
+  color: rgb(255, 255, 255);
+  /* text-shadow: -1px -1px 2px rgb(255, 255, 255); */
+  font-family: sans-serif;
+  background-color: #4A154B;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 20px;
+  margin: 10px;
+  will-change: transform;
+  transition: transform 100ms;
+}
+
+.channelColumn {
+  background: #4A154B;
+  padding: 10px;
+}
+
+.channelName:hover {
+  text-decoration: underline;
+  color: #4A154B;
+}
+
+.curChan {
+  width: auto;
+  background-color: #4A154B;
+  color: white;
+  padding: 5px;
+}
+
+button.right {
+  width: 75px;
+  float: right;
+  margin: 10px;
+}
+
+.flexsection button {
+  margin-left: 0;
+}
+
+.messagesList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+
+.repliesList {
+  display: list-item;
+}
+
+.repliesSection {
+
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+
+.gridbox0 {
+  display: block;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.gridbox1 {
+  display: list-item;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 6;
+}
+
+.gridbox2 {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 8;
+}
+
+.gridbox3 {
+  display: block;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.gridbox4 {
+  display: list-item;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 6;
+}
+
+.gridbox5 {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 8;
+}
+
+.messagesbox button, .threadbox button {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: auto;
+}
+
+
+@media (min-width: 800px) {
+
+  .flexsection {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  flexbox {
+    flex: 1;
+    padding: 0 30px 0 30px;
+    background-color: white;
+    margin: 10px;
+    height:88vh;
+    overflow-y: scroll;
+  }
+
+  flexbox.wide {
+    flex: 3;
+  }
+
+  .widehide {
+    display: none;
+  }
+
+  .channelsbox {
+    background-color: #eecca1;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .narrowhide {
+    display: none;
+  }
+}
+
+
+
+.hide {
+  display: none;
+}
